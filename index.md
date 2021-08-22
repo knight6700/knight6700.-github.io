@@ -1,37 +1,756 @@
-## Welcome to GitHub Pages
+<!doctype html>
+<html lang="en">
 
-You can use the [editor on GitHub](https://github.com/knight6700/knight6700.-github.io/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="img/favicon.png" type="image/png">
+	<title>M.Faress Portfolio</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="vendors/linericon/style.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+	<!-- main css -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+<body>
+<style>
+		#container{
+			margin:0 auto;
+			width:80%;
+			font-family: verdana,arial,sans-serif;
+			font-size:16px;
+		}
+		#modalWindow {
+			position: fixed;
+			font-family: arial,helvetica, sans-serif;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background: rgba(0, 0, 0, 0.4);
+			z-index: 99999;
+			opacity:0;
+			transition: opacity 400ms linear;
+			pointer-events: none;
+		}
+		#modalWindow:target {
+			opacity:1;
+			pointer-events: auto;
+		}
+		#modalWindow > div {
+			width:70%;
+			height: 70%;
+			position: relative;
+			margin: 10% auto;
+			
+			border: solid;
+			border-color: black;
+			border-width : 2px;
+			background: white;
+			border-radius: 10px;
+		}		
+	</style>
+	<!--================ Start Header Area =================-->
+	<header class="header_area">
+		<div class="main_menu">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""></a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+						<ul class="nav navbar-nav menu_nav justify-content-end">
+							<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+							<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+							
+							<li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+							<li class="nav-item submenu dropdown">
+								
+								<ul class="dropdown-menu">
+									<li class="nav-item"><a class="nav-link" href="elements.html">Elements</a></li>
+									<li class="nav-item"><a class="nav-link" href="portfolio-details.html">Portfolio Details</a></li>
+								</ul>
+							</li>
+							
+							<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<!--================ End Header Area =================-->
 
-### Markdown
+	<!--================ Start Home Banner Area =================-->
+	<section class="home_banner_area">
+		<div class="banner_inner">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-7">
+						<div class="banner_content">
+							<h3 class="text-uppercase">Hell0</h3>
+							<h1 class="text-uppercase">I am Mahmoud Fares</h1>
+							<h5 class="text-uppercase">Junior IOS developer</h5>
+							<div class="d-flex align-items-center">
+								<a class="primary_btn" href="contact.html"><span>Hire Me</span></a>
+								<a class="primary_btn tr-bg" href="#"><span>Get CV</span></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-5">
+						<div class="home_right_img">
+							<img class="" src="img/banner/home-right.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================ End Home Banner Area =================-->
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+	<!--================ Start About Us Area =================-->
+	<section class="about_area section_gap">
+		<div class="container">
+			<div class="row justify-content-start align-items-center">
+				<div class="col-lg-5">
+					<div class="about_img">
+						<img class="" src="img/about-us.png" alt="">
+					</div>
+				</div>
 
-```markdown
-Syntax highlighted code block
+				<div class="offset-lg-1 col-lg-5">
+					<div class="main_title text-left">
+						<h2>let’s <br>
+							Introduce about <br>
+							myself</h2>
+						<p> I am IOS Developer 26 years old and my current team focuses on customizing software. my experience developing IOS using Swift 4 and Objective C. </p>
+						<a class="primary_btn" href="#"><span>Download CV</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================ End About Us Area =================-->
 
-# Header 1
-## Header 2
-### Header 3
+	<!--================ Srart Brand Area =================-->
+	<section class="brand_area section_gap_bottom">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-6">
+					<div class="row">
+						<div class="col-lg-4 col-md-4 col-sm-6">
+							<div class="single-brand-item d-table">
+								<div class="d-table-cell text-center">
+									<img src="img/brands/logo1.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-6">
+							<div class="single-brand-item d-table">
+								<div class="d-table-cell text-center">
+									<img src="img/brands/logo2.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-6">
+							<div class="single-brand-item d-table">
+								<div class="d-table-cell text-center">
+									<img src="img/brands/logo3.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-6">
+							<div class="single-brand-item d-table">
+								<div class="d-table-cell text-center">
+									<img src="img/brands/logo4.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-6">
+							<div class="single-brand-item d-table">
+								<div class="d-table-cell text-center">
+									<img src="img/brands/logo5.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-6">
+							<div class="single-brand-item d-table">
+								<div class="d-table-cell text-center">
+									<img src="img/brands/logo6.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-6">
+							<div class="single-brand-item d-table">
+								<div class="d-table-cell text-center">
+									<img src="img/brands/logo7.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-6">
+							<div class="single-brand-item d-table">
+								<div class="d-table-cell text-center">
+									<img src="img/brands/logo8.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-6">
+							<div class="single-brand-item d-table">
+								<div class="d-table-cell text-center">
+									<img src="img/brands/logo9.png" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="offset-lg-2 col-lg-4 col-md-6">
+					<div class="client-info">
+						<div class="d-flex mb-50"><span class="lage">2</span> <span class="smll">Years Experience Working</span></div>
+						<div class="call-now d-flex">
+							<div>
+								<span class="fa fa-phone"></span>
+							</div>
+							<div class="ml-15">
+								<p>call us now</p>
+								<h3>(+2)01555929770</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================ End Brand Area =================-->
 
-- Bulleted
-- List
+	<!--================ Start Features Area =================-->
+	<section class="features_area">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-8 text-center">
+					<div class="main_title">
+						<h2>service offers </h2>
+						<p>
+							Is give may shall likeness made yielding spirit a itself togeth created 
+							after sea <br> is in beast beginning signs open god you're gathering ithe
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row feature_inner">
+				<div class="col-lg-3 col-md-6">
+					<div class="feature_item">
+						<img src="img/services/s1.png" alt="">
+						<h4>IOS developing</h4>
+						<p>Creeping for female light years that lesser can't evening heaven isn't bearing tree</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="feature_item">
+						<img src="img/services/s2.png" alt="">
+						<h4>UI/ux design</h4>
+						<p>Creeping for female light years that lesser can't evening heaven isn't bearing tree</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="feature_item">
+						<img src="img/services/s3.png" alt="">
+						<h4>wordpress </h4>
+						<p>Creeping for female light years that lesser can't evening heaven isn't bearing tree</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="feature_item">
+						<img src="img/services/s4.png" alt="">
+						<h4>Adobe XD</h4>
+						<p>Make Prototypes to understand design and bussiness developemts</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================ End Features Area =================-->
 
-1. Numbered
-2. List
+	<!--================Start Portfolio Area =================-->
+	<section class="portfolio_area" id="portfolio">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="main_title text-left">
+						<h2>quality work <br>
+							Recently done project </h2>
+					</div>
+				</div>
+			</div>
+		
+			<div class="filters-content">
+				<div class="row portfolio-grid justify-content-center">
+					<div class="col-lg-4 col-md-6 all latest">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+                                <a href="#modalWindow" >
+								<img class="img-fluid w-100"  src="img/portfolio/p1.jpg" alt="Sat-Finder">
+										<div class="overlay"></div>
+									
+								</a>
+                                
+                                <a href="#modalWindow" style="font-family: fantasy;">More Info</a>
 
-**Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
-```
+	<div id="modalWindow">
+		<div>
+			<br>
+			<div display:inline-block;>
+            <img style="height: 60%;width: 60%;float: left;" src="img/portfolio/1.png" alt="SAT-Finder" ></div>
+            <div display:inline-block;>
+				</div>
+                <P>sdfidjsdnmsajsijd</P>
+               <br><br>
+                <a href="www.google.com" >
+                    
+                <img style="width: 20%;height: 15%;text-align: center" src="img/portfolio/download.png">
+                </a>
+            <br>
+               
+			         <a href="#close" style="margin-left: 50%">Close modal</a>
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+		</div>
+	</div>
 
-### Jekyll Themes
+							</div>
+							
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 all latest">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+                                <a href="#modalWindow" >
+								<img class="img-fluid w-100"  src="img/portfolio/p1.jpg" alt="Sat-Finder">
+										<div class="overlay"></div>
+									
+								</a>
+                                
+                                <a href="#modalWindow" style="font-family: fantasy;">More Info</a>
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/knight6700/knight6700.-github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
-### Support or Contact
+	<div id="modalWindow">
+		<div>
+			<br>
+			<p>
+				This is the modal. Put any text or controls here.
+				<br><br>
+				<button type="button">Just a button for display purposes only!</button>
+                
+                <br><br>
+                <a href="#close">Close modal</a>
+			</p>
+		</div>
+	</div>
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+							</div>
+							
+						</div>
+					</div>
+						<div class="col-lg-4 col-md-6 all latest">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+                                <a href="#modalWindow" >
+								<img class="img-fluid w-100"  src="img/portfolio/p1.jpg" alt="Sat-Finder">
+										<div class="overlay"></div>
+									
+								</a>
+                                
+                                <a href="#modalWindow" style="font-family: fantasy;">More Info</a>
+
+
+	<div id="modalWindow">
+		<div>
+			<br>
+			<p>
+				This is the modal. Put any text or controls here.
+				<br><br>
+				<button type="button">Just a button for display purposes only!</button>
+                
+                <br><br>
+                <a href="#close">Close modal</a>
+			</p>
+		</div>
+	</div>
+
+							</div>
+							
+						</div>
+					</div>
+						<div class="col-lg-4 col-md-6 all latest">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+                                <a href="#modalWindow" >
+								<img class="img-fluid w-100"  src="img/portfolio/p1.jpg" alt="Sat-Finder">
+										<div class="overlay"></div>
+									
+								</a>
+                                
+                                <a href="#modalWindow" style="font-family: fantasy;">More Info</a>
+
+
+	<div id="modalWindow">
+		<div>
+			<br>
+			<p>
+				This is the modal. Put any text or controls here.
+				<br><br>
+				<button type="button">Just a button for display purposes only!</button>
+                
+                <br><br>
+                <a href="#close">Close modal</a>
+			</p>
+		</div>
+	</div>
+
+							</div>
+							
+						</div>
+					</div>
+						<div class="col-lg-4 col-md-6 all latest">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+                                <a href="#modalWindow" >
+								<img class="img-fluid w-100"  src="img/portfolio/p1.jpg" alt="Sat-Finder">
+										<div class="overlay"></div>
+									
+								</a>
+                                
+                                <a href="#modalWindow" style="font-family: fantasy;">More Info</a>
+
+
+	<div id="modalWindow">
+		<div>
+			<br>
+			<p>
+				This is the modal. Put any text or controls here.
+				<br><br>
+				<button type="button">Just a button for display purposes only!</button>
+                
+                <br><br>
+                <a href="#close">Close modal</a>
+			</p>
+		</div>
+	</div>
+
+							</div>
+							
+						</div>
+					</div>
+						<div class="col-lg-4 col-md-6 all latest">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+                                <a href="#modalWindow" >
+								<img class="img-fluid w-100"  src="img/portfolio/p1.jpg" alt="Sat-Finder">
+										<div class="overlay"></div>
+									
+								</a>
+                                
+                                <a href="#modalWindow" style="font-family: fantasy;">More Info</a>
+
+
+	<div id="modalWindow">
+		<div>
+			<br>
+			<p>
+				This is the modal. Put any text or controls here.
+				<br><br>
+				<button type="button">Just a button for display purposes only!</button>
+                
+                <br><br>
+                <a href="#close">Close modal</a>
+			</p>
+		</div>
+	</div>
+
+							</div>
+							
+						</div>
+					</div>
+						<div class="col-lg-4 col-md-6 all latest">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+                                <a href="#modalWindow" >
+								<img class="img-fluid w-100"  src="img/portfolio/p1.jpg" alt="Sat-Finder">
+										<div class="overlay"></div>
+									
+								</a>
+                                
+                                <a href="#modalWindow" style="font-family: fantasy;">More Info</a>
+
+
+	<div id="modalWindow">
+		<div>
+			<br>
+			<p>
+				This is the modal. Put any text or controls here.
+				<br><br>
+				<button type="button">Just a button for display purposes only!</button>
+                
+                <br><br>
+                <a href="#close">Close modal</a>
+			</p>
+		</div>
+	</div>
+
+							</div>
+							
+						</div>
+					</div>
+						<div class="col-lg-4 col-md-6 all latest">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+                                <a href="#modalWindow" >
+								<img class="img-fluid w-100"  src="img/portfolio/p1.jpg" alt="Sat-Finder">
+										<div class="overlay"></div>
+									
+								</a>
+                                
+                                <a href="#modalWindow" style="font-family: fantasy;">More Info</a>
+
+
+	<div id="modalWindow">
+		<div>
+			<br>
+			<p>
+				This is the modal. Put any text or controls here.
+				<br><br>
+				<button type="button">Just a button for display purposes only!</button>
+                
+                <br><br>
+                <a href="#close">Close modal</a>
+			</p>
+		</div>
+	</div>
+
+							</div>
+							
+						</div>
+					</div>
+						<div class="col-lg-4 col-md-6 all latest">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+                                <a href="#modalWindow" >
+								<img class="img-fluid w-100"  src="img/portfolio/p1.jpg" alt="Sat-Finder">
+										<div class="overlay"></div>
+									
+								</a>
+                                
+                                <a href="#modalWindow" style="font-family: fantasy;">More Info</a>
+
+
+	<div id="modalWindow">
+		<div>
+			<br>
+			<p>
+				This is the modal. Put any text or controls here.
+				<br><br>
+				<button type="button">Just a button for display purposes only!</button>
+                
+                <br><br>
+                <a href="#close">Close modal</a>
+			</p>
+		</div>
+	</div>
+
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================End Portfolio Area =================-->
+
+	<!--================ Start Testimonial Area =================-->
+	<div class="testimonial_area section_gap_bottom">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-8 text-center">
+					<div class="main_title">
+						<h2>client say about me</h2>
+						<p>Is give may shall likeness made yielding spirit a itself togeth created after sea is in beast <br>
+							 beginning signs open god you're gathering ithe</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="testi_slider owl-carousel">
+        			<div class="testi_item">
+        				<div class="row">
+        					<div class="col-lg-4">
+        						<img src="img/testimonials/t1.jpg" alt="">
+        					</div>
+        					<div class="col-lg-8">
+        						<div class="testi_text">
+        							<h4>Elite Martin</h4>
+									<p>Him, made can't called over won't there on divide there male fish beast own his day third seed sixth seas unto. Saw from </p>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="testi_item">
+        				<div class="row">
+        					<div class="col-lg-4">
+        						<img src="img/testimonials/t2.jpg" alt="">
+        					</div>
+        					<div class="col-lg-8">
+        						<div class="testi_text">
+        							<h4>Davil Saden</h4>
+									<p>Him, made can't called over won't there on divide there male fish beast own his day third seed sixth seas unto. Saw from </p>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="testi_item">
+        				<div class="row">
+        					<div class="col-lg-4">
+        						<img src="img/testimonials/t1.jpg" alt="">
+        					</div>
+        					<div class="col-lg-8">
+        						<div class="testi_text">
+        							<h4>Elite Martin</h4>
+									<p>Him, made can't called over won't there on divide there male fish beast own his day third seed sixth seas unto. Saw from </p>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="testi_item">
+        				<div class="row">
+        					<div class="col-lg-4">
+        						<img src="img/testimonials/t2.jpg" alt="">
+        					</div>
+        					<div class="col-lg-8">
+        						<div class="testi_text">
+        							<h4>Davil Saden</h4>
+									<p>Him, made can't called over won't there on divide there male fish beast own his day third seed sixth seas unto. Saw from </p>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="testi_item">
+        				<div class="row">
+        					<div class="col-lg-4">
+        						<img src="img/testimonials/t1.jpg" alt="">
+        					</div>
+        					<div class="col-lg-8">
+        						<div class="testi_text">
+        							<h4>Elite Martin</h4>
+									<p>Him, made can't called over won't there on divide there male fish beast own his day third seed sixth seas unto. Saw from </p>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="testi_item">
+        				<div class="row">
+        					<div class="col-lg-4">
+        						<img src="img/testimonials/t2.jpg" alt="">
+        					</div>
+        					<div class="col-lg-8">
+        						<div class="testi_text">
+        							<h4>Davil Saden</h4>
+									<p>Him, made can't called over won't there on divide there male fish beast own his day third seed sixth seas unto. Saw from </p>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        		</div>
+			</div>
+		</div>
+	</div>
+	<!--================ End Testimonial Area =================-->
+
+	<!--================ Start Newsletter Area =================-->
+	<section class="newsletter_area">
+		<div class="container">
+			<div class="row justify-content-center align-items-center">
+				<div class="col-lg-12">
+					<div class="subscription_box text-center">
+						<h2 class="text-uppercase text-white">get update from anywhere</h2>
+						<p class="text-white">
+							Bearing Void gathering light light his eavening unto dont afraid. 
+						</p>
+						<div class="subcribe-form" id="mc_embed_signup">
+							<form target="_blank" novalidate="true" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscription relative">
+								<input name="EMAIL" placeholder="Email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email address'" required="" type="email">
+								<div style="position: absolute; left: -5000px;">
+									<input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
+								</div>
+								<button class="primary-btn hover d-inline">Get Started</button>
+								<div class="info"></div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================ End Newsletter Area =================-->
+
+	<!--================Footer Area =================-->
+	<footer class="footer_area">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-12">
+					<div class="footer_top flex-column">
+						<div class="footer_logo">
+							<a href="#">
+								<img src="img/logo.png" alt="">
+							</a>
+							<h4>Follow Me</h4>
+						</div>
+						<div class="footer_social">
+							<a href="#"><i class="fa fa-facebook"></i></a>
+							<a href="#"><i class="fa fa-twitter"></i></a>
+							<a href="#"><i class="fa fa-dribbble"></i></a>
+							<a href="#"><i class="fa fa-behance"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row footer_bottom justify-content-center">
+				<p class="col-lg-8 col-sm-12 footer-text">
+					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved 
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		</div>
+	</footer>
+	<!--================End Footer Area =================-->
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/popper.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/stellar.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+	<script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+	<script src="vendors/isotope/isotope-min.js"></script>
+	<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+	<script src="js/jquery.ajaxchimp.min.js"></script>
+	<script src="js/mail-script.js"></script>
+	<!--gmaps Js-->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+	<script src="js/gmaps.min.js"></script>
+	<script src="js/theme.js"></script>
+</body>
+
+</html>
