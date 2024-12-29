@@ -1,756 +1,603 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#FFFFFF" />
 
-<head>
-	<!-- Required meta tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="icon" href="img/favicon.png" type="image/png">
-	<title>M.Faress Portfolio</title>
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="vendors/linericon/style.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/magnific-popup.css">
-	<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
-	<!-- main css -->
-	<link rel="stylesheet" href="css/style.css">
-</head>
+    <meta
+      name="description"
+      content="My name is Viktor, I come from Croatia and I'm actively learning
+    swift to become an iOS developer."
+    />
 
-<body>
-<style>
-		#container{
-			margin:0 auto;
-			width:80%;
-			font-family: verdana,arial,sans-serif;
-			font-size:16px;
-		}
-		#modalWindow {
-			position: fixed;
-			font-family: arial,helvetica, sans-serif;
-			top: 0;
-			right: 0;
-			bottom: 0;
-			left: 0;
-			background: rgba(0, 0, 0, 0.4);
-			z-index: 99999;
-			opacity:0;
-			transition: opacity 400ms linear;
-			pointer-events: none;
-		}
-		#modalWindow:target {
-			opacity:1;
-			pointer-events: auto;
-		}
-		#modalWindow > div {
-			width:70%;
-			height: 70%;
-			position: relative;
-			margin: 10% auto;
-			
-			border: solid;
-			border-color: black;
-			border-width : 2px;
-			background: white;
-			border-radius: 10px;
-		}		
-	</style>
-	<!--================ Start Header Area =================-->
-	<header class="header_area">
-		<div class="main_menu">
-			<nav class="navbar navbar-expand-lg navbar-light">
-				<div class="container">
-					<!-- Brand and toggle get grouped for better mobile display -->
-					<a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""></a>
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<!-- Collect the nav links, forms, and other content for toggling -->
-					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-						<ul class="nav navbar-nav menu_nav justify-content-end">
-							<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
-							<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-							
-							<li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-							<li class="nav-item submenu dropdown">
-								
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="elements.html">Elements</a></li>
-									<li class="nav-item"><a class="nav-link" href="portfolio-details.html">Portfolio Details</a></li>
-								</ul>
-							</li>
-							
-							<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-						</ul>
-					</div>
-				</div>
-			</nav>
-		</div>
-	</header>
-	<!--================ End Header Area =================-->
+    <meta
+      property="og:title"
+      content="Portfolio - Viktor Mauzer, iOS Developer"
+    />
+    <meta
+      property="og:description"
+      content="My name is Viktor, I come from Croatia and I'm actively learning
+      swift to become an iOS developer."
+    />
+    <meta
+      property="og:image"
+      content="https://viktormauzer.github.io/img/viktormauzer-dev-portfolio.png"
+    />
+    <meta property="og:url" content="https://viktormauzer.github.io/" />
+    <meta
+      property="og:site_name"
+      content="Portfolio - Viktor Mauzer, iOS Developer"
+    />
 
-	<!--================ Start Home Banner Area =================-->
-	<section class="home_banner_area">
-		<div class="banner_inner">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-7">
-						<div class="banner_content">
-							<h3 class="text-uppercase">Hell0</h3>
-							<h1 class="text-uppercase">I am Mahmoud Fares</h1>
-							<h5 class="text-uppercase">Junior IOS developer</h5>
-							<div class="d-flex align-items-center">
-								<a class="primary_btn" href="contact.html"><span>Hire Me</span></a>
-								<a class="primary_btn tr-bg" href="#"><span>Get CV</span></a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-5">
-						<div class="home_right_img">
-							<img class="" src="img/banner/home-right.png" alt="">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--================ End Home Banner Area =================-->
+    <link rel="apple-touch-icon" href="img/apple-icon.png" />
+    <link rel="shortcut icon" type="image/jpg" href="img/favicon.png" />
 
-	<!--================ Start About Us Area =================-->
-	<section class="about_area section_gap">
-		<div class="container">
-			<div class="row justify-content-start align-items-center">
-				<div class="col-lg-5">
-					<div class="about_img">
-						<img class="" src="img/about-us.png" alt="">
-					</div>
-				</div>
+    <link rel="stylesheet" href="style.css?v=2.0" />
+    <title>Portfolio - Viktor Mauzer, iOS Developer</title>
+  </head>
+  <body ontouchstart="">
+    <header class="header">
+      <div class="header__button no__highlights">
+        <div class="header__ham">
+          <span>&nbsp;</span>
+          <span>&nbsp;</span>
+          <span>&nbsp;</span>
+        </div>
+      </div>
+      <div class="header__bg">&nbsp;</div>
+      <nav class="header__nav">
+        <div class="header__nav-item">
+          <span>Portfolio</span>
+          <ul>
+            <li>
+              <a class="header__nav-link" href="/portfolio/stayfitshop.html"
+                >Careem</a
+              >
+            </li>
+            <li>
+              <a class="header__nav-link" href="/portfolio/stranger-chats.html"
+                >Stranger Chats</a
+              >
+            </li>
+            <li>
+              <a aria-label="Github"
+              rel="noreferrer noopener"
+              target="_blank" 
+              class="header__nav-link" 
+              href="https://github.com/viktormauzer/CombinedLogin"
+                >CombinedLogin →</a
+              >
+            </li>
+            <li>
+              <a aria-label="Github"
+              rel="noreferrer noopener"
+              target="_blank" 
+              class="header__nav-link" 
+              href="https://github.com/viktormauzer/CustomTabBar"
+                >CustomTabBar →</a
+              >
+            </li>
+            <li>
+              <a aria-label="Github"
+              rel="noreferrer noopener"
+              target="_blank" 
+              class="header__nav-link" 
+              href="https://github.com/viktormauzer/YTFilter"
+                >YTFilter →</a
+              >
+            </li>
+            <li>
+              <a aria-label="Github"
+              rel="noreferrer noopener"
+              target="_blank" 
+              class="header__nav-link" 
+              href="https://github.com/viktormauzer/SideMenu"
+                >SideMenu →</a
+              >
+            </li>
+            <li>
+              <a aria-label="Github"
+              rel="noreferrer noopener"
+              target="_blank" 
+              class="header__nav-link" 
+              href="https://github.com/viktormauzer/TheSlider"
+                >TheSlider →</a
+              >
+            </li>
+            <li>
+              <a aria-label="Github"
+              rel="noreferrer noopener"
+              target="_blank" 
+              class="header__nav-link" 
+              href="https://github.com/viktormauzer/openweather-UIKit"
+                >OpenWeather →</a
+              >
+            </li>
+            <li>
+              <a aria-label="Github"
+              rel="noreferrer noopener"
+              target="_blank" 
+              class="header__nav-link" 
+              href="https://github.com/viktormauzer/FriendFaceChallenge"
+                >FriendFace Challenge →</a
+              >
+            </li>
+            <li>
+              <a aria-label="Github"
+              rel="noreferrer noopener"
+              target="_blank" 
+              class="header__nav-link" 
+              href="https://github.com/viktormauzer/BMICalculator-iOS-UIKit"
+                >BMICalculator →</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="header__nav-item">
+          <span>menu</span>
+          <ul>
+            <li>
+              <a class="header__nav-link" href="/index.html">Home</a>
+            </li>
+            <li><a class="header__nav-link" href="about.html">About</a></li>
+            <li><a class="header__nav-link" href="privacy.html">Privacy</a></li>
+          </ul>
+        </div>
+        <div class="header__nav-item">
+          <span>Contact</span>
+          <ul>
+            <li>
+              <a
+                class="button button-white no__highlights"
+                rel="noreferrer noopener"
+                target="_blank"
+                href="https://twitter.com/viktormauzer"
+              >
+                <svg class="button-icon">
+                  <use xlink:href="/icons/sprite.svg#vector-twitter"></use>
+                </svg>
+                Twitter
+              </a>
+            </li>
+            <li>
+              <a
+                class="button button-white no__highlights"
+                rel="noreferrer noopener"
+                target="_blank"
+                href="https://viktormauzer.github.io/files/ViktorMauzerCV.pdf"
+              >
+                Download CV
+              </a>
+            </li>
+            <li>
+              <div class="button send-email button-white no__highlights">
+                <svg class="button-icon">
+                  <use xlink:href="/icons/sprite.svg#vector-mail"></use>
+                </svg>
+                Email Address
+              </div>
+              <div class="email-address"></div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-				<div class="offset-lg-1 col-lg-5">
-					<div class="main_title text-left">
-						<h2>let’s <br>
-							Introduce about <br>
-							myself</h2>
-						<p> I am IOS Developer 26 years old and my current team focuses on customizing software. my experience developing IOS using Swift 4 and Objective C. </p>
-						<a class="primary_btn" href="#"><span>Download CV</span></a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--================ End About Us Area =================-->
+    <section class="hero">
+      <img
+        src="img/decoration/grid-dots.png"
+        alt="grid-dots"
+        class="grid__dots"
+      />
+      <div class="decoration__element">&nbsp;</div>
+      <div class="decoration__element2">&nbsp;</div>
+      <div class="hero__info">
+        <img class="hero__info-img" src="img/profile-pic.png" alt="profile__photo">
+        <div class="hero__text">
+          <h1>Mahmoud Fares</h1>
+          <span class="hero__text-desc">iOS Developer at Careem ®</span>
+        </div>
+      </div>
+      <div class="hero__cta">
+        <span>portfolio</span>
+        <div class="hero__cta-icon">
+          <svg class="hero__icon">
+            <use xlink:href="/icons/sprite.svg#vector-arrow"></use>
+          </svg>
+        </div>
+      </div>
+    </section>
 
-	<!--================ Srart Brand Area =================-->
-	<section class="brand_area section_gap_bottom">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-6">
-					<div class="row">
-						<div class="col-lg-4 col-md-4 col-sm-6">
-							<div class="single-brand-item d-table">
-								<div class="d-table-cell text-center">
-									<img src="img/brands/logo1.png" alt="">
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-6">
-							<div class="single-brand-item d-table">
-								<div class="d-table-cell text-center">
-									<img src="img/brands/logo2.png" alt="">
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-6">
-							<div class="single-brand-item d-table">
-								<div class="d-table-cell text-center">
-									<img src="img/brands/logo3.png" alt="">
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-6">
-							<div class="single-brand-item d-table">
-								<div class="d-table-cell text-center">
-									<img src="img/brands/logo4.png" alt="">
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-6">
-							<div class="single-brand-item d-table">
-								<div class="d-table-cell text-center">
-									<img src="img/brands/logo5.png" alt="">
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-6">
-							<div class="single-brand-item d-table">
-								<div class="d-table-cell text-center">
-									<img src="img/brands/logo6.png" alt="">
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-6">
-							<div class="single-brand-item d-table">
-								<div class="d-table-cell text-center">
-									<img src="img/brands/logo7.png" alt="">
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-6">
-							<div class="single-brand-item d-table">
-								<div class="d-table-cell text-center">
-									<img src="img/brands/logo8.png" alt="">
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-6">
-							<div class="single-brand-item d-table">
-								<div class="d-table-cell text-center">
-									<img src="img/brands/logo9.png" alt="">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="offset-lg-2 col-lg-4 col-md-6">
-					<div class="client-info">
-						<div class="d-flex mb-50"><span class="lage">2</span> <span class="smll">Years Experience Working</span></div>
-						<div class="call-now d-flex">
-							<div>
-								<span class="fa fa-phone"></span>
-							</div>
-							<div class="ml-15">
-								<p>call us now</p>
-								<h3>(+2)01555929770</h3>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--================ End Brand Area =================-->
+    <section class="stayfitshop">
+      <div class="stayfitshop__slider slider">
+        <div class="slider__next slider__btn no__highlights">
+          <svg class="slider__next-icon slider__icon">
+            <use xlink:href="/icons/sprite.svg#vector-arrow"></use>
+          </svg>
+        </div>
+        <div class="slider__prev slider__btn no__highlights">
+          <svg class="slider__prev-icon slider__icon">
+            <use xlink:href="/icons/sprite.svg#vector-arrow"></use>
+          </svg>
+        </div>
+        <div class="stayfitshop__slider-container slider-container">
+          <img
+            class="slide lazy-img"
+            data-src="img/Careem/1.png"
+            src="img/open-weather/lazy.png"
+            alt="slide"
+          />
+          <img
+            class="slide lazy-img"
+            data-src="img/Careem/2.png"
+            src="img/open-weather/lazy.png"
+            alt="slide"
+          />
+          <img
+            class="slide lazy-img"
+            data-src="Careem/3.png"
+            src="img/open-weather/lazy.png"
+            alt="slide"
+          />
+          <img
+            class="slide lazy-img"
+            data-src="img/Careem/4.png"
+            src="img/open-weather/lazy.png"
+            alt="slide"
+          />
+        </div>
+        <div class="slider__indicator"></div>
+      </div>
+      </div>
+      <div class="stayfitshop__info">
+        <h2>Careem</h2>
+        <p>
+          Made using SwiftUI with KMP, Careem, the everything app for your everyday needs. Rides, food, groceries, payments and more.
+        </p>
+        <div class="stayfitshop__cta">
+          <a
+            aria-label="Github"
+            rel="noreferrer noopener"
+            target="_blank"
+            href="https://apps.apple.com/us/app/careem-rides-food-more/id592978487"
+            class="github__button button button-dark no__highlights"
+          >
+            <svg class="github__button-icon button-icon-light">
+              <use xlink:href="/icons/sprite.svg#vector-appStore"></use>
+            </svg>
+            <svg class="github__button-icon button-icon-light">
+              <use xlink:href="/icons/sprite.svg#vector-github-logo-text"></use>
+            </svg>
+          </a>
+          <a
+            href="/portfolio/stayfitshop.html"
+            class="button button-hollow-dark no__highlights"
+            >more info</a
+          >
+        </div>
+      </div>
+    </section>
 
-	<!--================ Start Features Area =================-->
-	<section class="features_area">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-8 text-center">
-					<div class="main_title">
-						<h2>service offers </h2>
-						<p>
-							Is give may shall likeness made yielding spirit a itself togeth created 
-							after sea <br> is in beast beginning signs open god you're gathering ithe
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="row feature_inner">
-				<div class="col-lg-3 col-md-6">
-					<div class="feature_item">
-						<img src="img/services/s1.png" alt="">
-						<h4>IOS developing</h4>
-						<p>Creeping for female light years that lesser can't evening heaven isn't bearing tree</p>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6">
-					<div class="feature_item">
-						<img src="img/services/s2.png" alt="">
-						<h4>UI/ux design</h4>
-						<p>Creeping for female light years that lesser can't evening heaven isn't bearing tree</p>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6">
-					<div class="feature_item">
-						<img src="img/services/s3.png" alt="">
-						<h4>wordpress </h4>
-						<p>Creeping for female light years that lesser can't evening heaven isn't bearing tree</p>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6">
-					<div class="feature_item">
-						<img src="img/services/s4.png" alt="">
-						<h4>Adobe XD</h4>
-						<p>Make Prototypes to understand design and bussiness developemts</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--================ End Features Area =================-->
+    <section class="stranger__chats">
+      <div class="stranger__chats-info">
+        <h2>Stranger Chats</h2>
+        <p>
+          A Firebase programmatic UIKit chat app for people who have strange
+          friends. Users can register their account, login, add friends via
+          their email address, add their friends' profile image and chat. All
+          data is synced to the Firebase Firestore database.
+        </p>
+        <div class="stranger__chats-cta">
+          <a
+            aria-label="Github"
+            rel="noreferrer noopener"
+            target="_blank"
+            href="https://github.com/viktormauzer/Stranger-Chats"
+            class="github__button button button-white no__highlights"
+          >
+            <svg class="github__button-icon button-icon">
+              <use xlink:href="/icons/sprite.svg#vector-github-logo"></use>
+            </svg>
+            <svg class="github__button-icon button-icon">
+              <use xlink:href="/icons/sprite.svg#vector-github-logo-text"></use>
+            </svg>
+          </a>
+          <a
+            href="/portfolio/stranger-chats.html"
+            class="button button-white no__highlights"
+            >more info</a
+          >
+        </div>
+      </div>
+    </section>
 
-	<!--================Start Portfolio Area =================-->
-	<section class="portfolio_area" id="portfolio">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="main_title text-left">
-						<h2>quality work <br>
-							Recently done project </h2>
-					</div>
-				</div>
-			</div>
-		
-			<div class="filters-content">
-				<div class="row portfolio-grid justify-content-center">
-					<div class="col-lg-4 col-md-6 all latest">
-						<div class="portfolio_box">
-							<div class="single_portfolio">
-                                <a href="#modalWindow" >
-								<img class="img-fluid w-100"  src="img/portfolio/p1.jpg" alt="Sat-Finder">
-										<div class="overlay"></div>
-									
-								</a>
-                                
-                                <a href="#modalWindow" style="font-family: fantasy;">More Info</a>
+    <section class="showcase">
+      <h2 class="showcase__title">More Apps & Projects</h2>
 
+      <div class="showcase__item">
+        <div class="showcase__item-video">
+          <video controls
+          preload="none"
+          poster="img/showcase/combinedlogin-thumb.jpeg" src="img/showcase/combinedlogin-video.mp4"></video>
+        </div>
+        <div class="showcase__item-info">
+          <div class="showcase__item-info-text">
+            <h3>CombinedLogin</h3>
+            <p>A simple register/login screen to showcase the implementation of Combine Framework in UIKit with MVVM architecture. All fields are required and the password fields must match before the submit button is enabled.</p>
+            <p>To add the extra touch to the design, I used custom fonts and background for this form.</p>
+            <span>UIKit</span>
+            <span>Combine</span>
+            <span>MVVM</span>
+            <span>Custom Fonts</span>
+          </div>
+          <div class="showcase__item-info-cta">
+            <a
+            aria-label="Github"
+            rel="noreferrer noopener"
+            target="_blank"
+            href="https://github.com/viktormauzer/CombinedLogin"
+            class="github__button button button-dark no__highlights"
+          >
+            <svg class="github__button-icon button-icon-light">
+              <use xlink:href="/icons/sprite.svg#vector-github-logo"></use>
+            </svg>
+            <svg class="github__button-icon button-icon-light">
+              <use xlink:href="/icons/sprite.svg#vector-github-logo-text"></use>
+            </svg>
+          </a>
+          </div>
+        </div>
+      </div>
 
-	<div id="modalWindow">
-		<div>
-			<br>
-			<div display:inline-block;>
-            <img style="height: 60%;width: 60%;float: left;" src="img/portfolio/1.png" alt="SAT-Finder" ></div>
-            <div display:inline-block;>
-				</div>
-                <P>sdfidjsdnmsajsijd</P>
-               <br><br>
-                <a href="www.google.com" >
-                    
-                <img style="width: 20%;height: 15%;text-align: center" src="img/portfolio/download.png">
-                </a>
-            <br>
-               
-			         <a href="#close" style="margin-left: 50%">Close modal</a>
+      <div class="showcase__item">
+        <div class="showcase__item-video">
+          <video controls
+          preload="none"
+          poster="img/showcase/custom-tabbar-thumb.jpeg" src="img/showcase/custom-tabbar-video.mp4"></video>
+        </div>
+        <div class="showcase__item-info">
+          <div class="showcase__item-info-text">
+            <h3>Custom TabBar</h3>
+            <p>This custom TabBar is made with SwiftUI buttons. Works on all device sizes and orientations. There is a state property "selectedTab" that tracks which tab button is pressed and switches over the enum to show the corresponding view as well as style the buttons.</p>
+            <p>Spring animations added to tabbar buttons for extra flare.</p>
+            <span>SwiftUI</span>
+            <span>custom tabbar</span>
+          </div>
+          <div class="showcase__item-info-cta">
+            <a
+            aria-label="Github"
+            rel="noreferrer noopener"
+            target="_blank"
+            href="https://github.com/viktormauzer/CustomTabBar"
+            class="github__button button button-dark no__highlights"
+          >
+            <svg class="github__button-icon button-icon-light">
+              <use xlink:href="/icons/sprite.svg#vector-github-logo"></use>
+            </svg>
+            <svg class="github__button-icon button-icon-light">
+              <use xlink:href="/icons/sprite.svg#vector-github-logo-text"></use>
+            </svg>
+          </a>
+          </div>
+        </div>
+      </div>
 
-		</div>
-	</div>
+      <div class="showcase__item">
+        <div class="showcase__item-video">
+          <video controls
+          preload="none"
+          poster="img/showcase/ytfilter-thumb.jpeg" src="img/showcase/ytfilter-video.mp4"></video>
+        </div>
+        <div class="showcase__item-info">
+          <div class="showcase__item-info-text">
+            <h3>YTFilter</h3>
+            <p>Built using SwiftUI where the app filters content in a list based on a button press similar to the YouTube app on iOS (only the content is in image form, not video).</p>
+            <p> All categories are added to the selector automatically based on the included data. By tapping on each category, the list shows coresponding data.</p>
+            <span>SwiftUI</span>
+            <span>customized list view</span>
+            <span>MapKit</span>
+          </div>
+          <div class="showcase__item-info-cta">
+            <a
+            aria-label="Github"
+            rel="noreferrer noopener"
+            target="_blank"
+            href="https://github.com/viktormauzer/YTFilter"
+            class="github__button button button-dark no__highlights"
+          >
+            <svg class="github__button-icon button-icon-light">
+              <use xlink:href="/icons/sprite.svg#vector-github-logo"></use>
+            </svg>
+            <svg class="github__button-icon button-icon-light">
+              <use xlink:href="/icons/sprite.svg#vector-github-logo-text"></use>
+            </svg>
+          </a>
+          </div>
+        </div>
+      </div>
 
-							</div>
-							
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 all latest">
-						<div class="portfolio_box">
-							<div class="single_portfolio">
-                                <a href="#modalWindow" >
-								<img class="img-fluid w-100"  src="img/portfolio/p1.jpg" alt="Sat-Finder">
-										<div class="overlay"></div>
-									
-								</a>
-                                
-                                <a href="#modalWindow" style="font-family: fantasy;">More Info</a>
+      <div class="showcase__item">
+        <div class="showcase__item-video">
+          <video controls
+          preload="none"
+          poster="img/showcase/side-menu-thumb.jpeg" src="img/showcase/side-menu-video.mp4"></video>
+        </div>
+        <div class="showcase__item-info">
+          <div class="showcase__item-info-text">
+            <h3>SideMenu</h3>
+            <p>UIKit based side menu activated by button press for a Swift iOS app. To showcase the feature, I made an "email-like" app where users can open the menu by pressing the navigation bar button.</p>
+            <p>The menu slides from the left and shows possible categories to filter shown messages. To close the menu, users can tap on a category, tap at the empty spaces to the right or drag the menu to the left.</p>
+            <span>UIKit</span>
+            <span>Storyboard</span>
+            <span>xib</span>
+          </div>
+          <div class="showcase__item-info-cta">
+            <a
+            aria-label="Github"
+            rel="noreferrer noopener"
+            target="_blank"
+            href="https://github.com/viktormauzer/SideMenu"
+            class="github__button button button-dark no__highlights"
+          >
+            <svg class="github__button-icon button-icon-light">
+              <use xlink:href="/icons/sprite.svg#vector-github-logo"></use>
+            </svg>
+            <svg class="github__button-icon button-icon-light">
+              <use xlink:href="/icons/sprite.svg#vector-github-logo-text"></use>
+            </svg>
+          </a>
+          </div>
+        </div>
+      </div>
 
+      <div class="showcase__item">
+        <div class="showcase__item-video">
+          <video controls
+          preload="none"
+          poster="img/showcase/theslider-thumb.jpeg" src="img/showcase/theslider-video.mp4"></video>
+        </div>
+        <div class="showcase__item-info">
+          <div class="showcase__item-info-text">
+            <h3>TheSlider</h3>
+            <p>This is a simple content slider built using SwiftUI with the help of TabView and its custom TabViewStyle. I decided not to use the default index display mode so I made my own.</p>
+            <p>The slider works by dragging the image on top and the rest of the content updates by updating the selectedIndex property which is bound in TabView. This also updates the custom index display which I called the SlideIndicatorView.</p>
+            <span>SwiftUI</span>
+            <span>custom index display mode</span>
+          </div>
+          <div class="showcase__item-info-cta">
+            <a
+            aria-label="Github"
+            rel="noreferrer noopener"
+            target="_blank"
+            href="https://github.com/viktormauzer/TheSlider"
+            class="github__button button button-dark no__highlights"
+          >
+            <svg class="github__button-icon button-icon-light">
+              <use xlink:href="/icons/sprite.svg#vector-github-logo"></use>
+            </svg>
+            <svg class="github__button-icon button-icon-light">
+              <use xlink:href="/icons/sprite.svg#vector-github-logo-text"></use>
+            </svg>
+          </a>
+          </div>
+        </div>
+      </div>
 
-	<div id="modalWindow">
-		<div>
-			<br>
-			<p>
-				This is the modal. Put any text or controls here.
-				<br><br>
-				<button type="button">Just a button for display purposes only!</button>
-                
-                <br><br>
-                <a href="#close">Close modal</a>
-			</p>
-		</div>
-	</div>
+      <div class="showcase__item">
+        <div class="showcase__item-video">
+          <video controls
+          preload="none"
+          poster="img/showcase/openweather-thumb.jpeg" src="img/showcase/openweather-video.mp4"></video>
+        </div>
+        <div class="showcase__item-info">
+          <div class="showcase__item-info-text">
+            <h3>OpenWeather</h3>
+            <p>A Simple weather app made using OpenWeatherMap API for current weather
+              conditions. Users can search weather conditions by city name or by
+              tapping the location button to use their current location for fetching
+              weather.</p>
+              <p>The background images change depending on the fetched weather data. There are a few options: cloudy, rain, snow, sunny and storm.</p>
+            <span>uikit</span>
+            <span>storyboard</span>
+            <span>api</span>
+          </div>
+          <div class="showcase__item-info-cta">
+            <a
+            aria-label="Github"
+            rel="noreferrer noopener"
+            target="_blank"
+            href="https://github.com/viktormauzer/openweather-UIKit"
+            class="github__button button button-dark no__highlights"
+          >
+            <svg class="github__button-icon button-icon-light">
+              <use xlink:href="/icons/sprite.svg#vector-github-logo"></use>
+            </svg>
+            <svg class="github__button-icon button-icon-light">
+              <use xlink:href="/icons/sprite.svg#vector-github-logo-text"></use>
+            </svg>
+          </a>
+          </div>
+        </div>
+      </div>
 
-							</div>
-							
-						</div>
-					</div>
-						<div class="col-lg-4 col-md-6 all latest">
-						<div class="portfolio_box">
-							<div class="single_portfolio">
-                                <a href="#modalWindow" >
-								<img class="img-fluid w-100"  src="img/portfolio/p1.jpg" alt="Sat-Finder">
-										<div class="overlay"></div>
-									
-								</a>
-                                
-                                <a href="#modalWindow" style="font-family: fantasy;">More Info</a>
+      <div class="showcase__item">
+        <div class="showcase__item-video">
+          <video controls
+          preload="none"
+          poster="img/showcase/friendface-thumb.jpeg" src="img/showcase/friendface-video.mp4"></video>
+        </div>
+        <div class="showcase__item-info">
+          <div class="showcase__item-info-text">
+            <h3>FriendFace Challenge</h3>
+            <p>I made this app while attending Paul Hudson's 100 days of SwiftUI course as a challenge set by Paul. The app needs to download data from the internet, save it device using CoreData asynchronously and display it in the UI.</p>
+            <p>I enjoyed this challenge so much I made a tutorial on how it's done on Medium. Check it out here -> <a href="https://medium.com/@viktormauzer/solving-friendface-100daysofswiftui-challenge-day-60-61-754309014448">FriendFace Challenge Tutorial</a></p>
+            <span>SwiftUI</span>
+            <span>Challenge</span>
+            <span>tutorial</span>
+          </div>
+          <div class="showcase__item-info-cta">
+            <a
+            aria-label="Github"
+            rel="noreferrer noopener"
+            target="_blank"
+            href="https://github.com/viktormauzer/FriendFaceChallenge"
+            class="github__button button button-dark no__highlights"
+          >
+            <svg class="github__button-icon button-icon-light">
+              <use xlink:href="/icons/sprite.svg#vector-github-logo"></use>
+            </svg>
+            <svg class="github__button-icon button-icon-light">
+              <use xlink:href="/icons/sprite.svg#vector-github-logo-text"></use>
+            </svg>
+          </a>
+          </div>
+        </div>
+      </div>
 
-
-	<div id="modalWindow">
-		<div>
-			<br>
-			<p>
-				This is the modal. Put any text or controls here.
-				<br><br>
-				<button type="button">Just a button for display purposes only!</button>
-                
-                <br><br>
-                <a href="#close">Close modal</a>
-			</p>
-		</div>
-	</div>
-
-							</div>
-							
-						</div>
-					</div>
-						<div class="col-lg-4 col-md-6 all latest">
-						<div class="portfolio_box">
-							<div class="single_portfolio">
-                                <a href="#modalWindow" >
-								<img class="img-fluid w-100"  src="img/portfolio/p1.jpg" alt="Sat-Finder">
-										<div class="overlay"></div>
-									
-								</a>
-                                
-                                <a href="#modalWindow" style="font-family: fantasy;">More Info</a>
-
-
-	<div id="modalWindow">
-		<div>
-			<br>
-			<p>
-				This is the modal. Put any text or controls here.
-				<br><br>
-				<button type="button">Just a button for display purposes only!</button>
-                
-                <br><br>
-                <a href="#close">Close modal</a>
-			</p>
-		</div>
-	</div>
-
-							</div>
-							
-						</div>
-					</div>
-						<div class="col-lg-4 col-md-6 all latest">
-						<div class="portfolio_box">
-							<div class="single_portfolio">
-                                <a href="#modalWindow" >
-								<img class="img-fluid w-100"  src="img/portfolio/p1.jpg" alt="Sat-Finder">
-										<div class="overlay"></div>
-									
-								</a>
-                                
-                                <a href="#modalWindow" style="font-family: fantasy;">More Info</a>
-
-
-	<div id="modalWindow">
-		<div>
-			<br>
-			<p>
-				This is the modal. Put any text or controls here.
-				<br><br>
-				<button type="button">Just a button for display purposes only!</button>
-                
-                <br><br>
-                <a href="#close">Close modal</a>
-			</p>
-		</div>
-	</div>
-
-							</div>
-							
-						</div>
-					</div>
-						<div class="col-lg-4 col-md-6 all latest">
-						<div class="portfolio_box">
-							<div class="single_portfolio">
-                                <a href="#modalWindow" >
-								<img class="img-fluid w-100"  src="img/portfolio/p1.jpg" alt="Sat-Finder">
-										<div class="overlay"></div>
-									
-								</a>
-                                
-                                <a href="#modalWindow" style="font-family: fantasy;">More Info</a>
-
-
-	<div id="modalWindow">
-		<div>
-			<br>
-			<p>
-				This is the modal. Put any text or controls here.
-				<br><br>
-				<button type="button">Just a button for display purposes only!</button>
-                
-                <br><br>
-                <a href="#close">Close modal</a>
-			</p>
-		</div>
-	</div>
-
-							</div>
-							
-						</div>
-					</div>
-						<div class="col-lg-4 col-md-6 all latest">
-						<div class="portfolio_box">
-							<div class="single_portfolio">
-                                <a href="#modalWindow" >
-								<img class="img-fluid w-100"  src="img/portfolio/p1.jpg" alt="Sat-Finder">
-										<div class="overlay"></div>
-									
-								</a>
-                                
-                                <a href="#modalWindow" style="font-family: fantasy;">More Info</a>
-
-
-	<div id="modalWindow">
-		<div>
-			<br>
-			<p>
-				This is the modal. Put any text or controls here.
-				<br><br>
-				<button type="button">Just a button for display purposes only!</button>
-                
-                <br><br>
-                <a href="#close">Close modal</a>
-			</p>
-		</div>
-	</div>
-
-							</div>
-							
-						</div>
-					</div>
-						<div class="col-lg-4 col-md-6 all latest">
-						<div class="portfolio_box">
-							<div class="single_portfolio">
-                                <a href="#modalWindow" >
-								<img class="img-fluid w-100"  src="img/portfolio/p1.jpg" alt="Sat-Finder">
-										<div class="overlay"></div>
-									
-								</a>
-                                
-                                <a href="#modalWindow" style="font-family: fantasy;">More Info</a>
-
-
-	<div id="modalWindow">
-		<div>
-			<br>
-			<p>
-				This is the modal. Put any text or controls here.
-				<br><br>
-				<button type="button">Just a button for display purposes only!</button>
-                
-                <br><br>
-                <a href="#close">Close modal</a>
-			</p>
-		</div>
-	</div>
-
-							</div>
-							
-						</div>
-					</div>
-						<div class="col-lg-4 col-md-6 all latest">
-						<div class="portfolio_box">
-							<div class="single_portfolio">
-                                <a href="#modalWindow" >
-								<img class="img-fluid w-100"  src="img/portfolio/p1.jpg" alt="Sat-Finder">
-										<div class="overlay"></div>
-									
-								</a>
-                                
-                                <a href="#modalWindow" style="font-family: fantasy;">More Info</a>
+      <div class="showcase__item">
+        <div class="showcase__item-video">
+          <video controls
+          preload="none"
+          poster="img/showcase/bmi-calculator-thumb.jpeg" src="img/showcase/bmi-calculator-video.mp4"></video>
+        </div>
+        <div class="showcase__item-info">
+          <div class="showcase__item-info-text">
+            <h3>BMICalculator</h3>
+            <p>Made during my iOS Development course by Dr. Angela Yu on Udemy using UIKit and storyboards. The user can input their weight and height information using sliders and calculate their BMI by pressing the calculate button.</p>
+            <p>The value is calculated and presented in a new view controller modally. Pressing the recalculate button dismisses the view controller.</p>
+            <span>uikit</span>
+            <span>storyboard</span>
+          </div>
+          <div class="showcase__item-info-cta">
+            <a
+            aria-label="Github"
+            rel="noreferrer noopener"
+            target="_blank"
+            href="https://github.com/viktormauzer/BMICalculator-iOS-UIKit"
+            class="github__button button button-dark no__highlights"
+          >
+            <svg class="github__button-icon button-icon-light">
+              <use xlink:href="/icons/sprite.svg#vector-github-logo"></use>
+            </svg>
+            <svg class="github__button-icon button-icon-light">
+              <use xlink:href="/icons/sprite.svg#vector-github-logo-text"></use>
+            </svg>
+          </a>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
-	<div id="modalWindow">
-		<div>
-			<br>
-			<p>
-				This is the modal. Put any text or controls here.
-				<br><br>
-				<button type="button">Just a button for display purposes only!</button>
-                
-                <br><br>
-                <a href="#close">Close modal</a>
-			</p>
-		</div>
-	</div>
+    <footer class="footer">
+      <div class="footer__content">
+        <a href="about.html">About/Contact</a>
+        <a href="privacy.html">Privacy</a>
+      </div>
+    </footer>
 
-							</div>
-							
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--================End Portfolio Area =================-->
-
-	<!--================ Start Testimonial Area =================-->
-	<div class="testimonial_area section_gap_bottom">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-8 text-center">
-					<div class="main_title">
-						<h2>client say about me</h2>
-						<p>Is give may shall likeness made yielding spirit a itself togeth created after sea is in beast <br>
-							 beginning signs open god you're gathering ithe</p>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="testi_slider owl-carousel">
-        			<div class="testi_item">
-        				<div class="row">
-        					<div class="col-lg-4">
-        						<img src="img/testimonials/t1.jpg" alt="">
-        					</div>
-        					<div class="col-lg-8">
-        						<div class="testi_text">
-        							<h4>Elite Martin</h4>
-									<p>Him, made can't called over won't there on divide there male fish beast own his day third seed sixth seas unto. Saw from </p>
-        						</div>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="testi_item">
-        				<div class="row">
-        					<div class="col-lg-4">
-        						<img src="img/testimonials/t2.jpg" alt="">
-        					</div>
-        					<div class="col-lg-8">
-        						<div class="testi_text">
-        							<h4>Davil Saden</h4>
-									<p>Him, made can't called over won't there on divide there male fish beast own his day third seed sixth seas unto. Saw from </p>
-        						</div>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="testi_item">
-        				<div class="row">
-        					<div class="col-lg-4">
-        						<img src="img/testimonials/t1.jpg" alt="">
-        					</div>
-        					<div class="col-lg-8">
-        						<div class="testi_text">
-        							<h4>Elite Martin</h4>
-									<p>Him, made can't called over won't there on divide there male fish beast own his day third seed sixth seas unto. Saw from </p>
-        						</div>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="testi_item">
-        				<div class="row">
-        					<div class="col-lg-4">
-        						<img src="img/testimonials/t2.jpg" alt="">
-        					</div>
-        					<div class="col-lg-8">
-        						<div class="testi_text">
-        							<h4>Davil Saden</h4>
-									<p>Him, made can't called over won't there on divide there male fish beast own his day third seed sixth seas unto. Saw from </p>
-        						</div>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="testi_item">
-        				<div class="row">
-        					<div class="col-lg-4">
-        						<img src="img/testimonials/t1.jpg" alt="">
-        					</div>
-        					<div class="col-lg-8">
-        						<div class="testi_text">
-        							<h4>Elite Martin</h4>
-									<p>Him, made can't called over won't there on divide there male fish beast own his day third seed sixth seas unto. Saw from </p>
-        						</div>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="testi_item">
-        				<div class="row">
-        					<div class="col-lg-4">
-        						<img src="img/testimonials/t2.jpg" alt="">
-        					</div>
-        					<div class="col-lg-8">
-        						<div class="testi_text">
-        							<h4>Davil Saden</h4>
-									<p>Him, made can't called over won't there on divide there male fish beast own his day third seed sixth seas unto. Saw from </p>
-        						</div>
-        					</div>
-        				</div>
-        			</div>
-        		</div>
-			</div>
-		</div>
-	</div>
-	<!--================ End Testimonial Area =================-->
-
-	<!--================ Start Newsletter Area =================-->
-	<section class="newsletter_area">
-		<div class="container">
-			<div class="row justify-content-center align-items-center">
-				<div class="col-lg-12">
-					<div class="subscription_box text-center">
-						<h2 class="text-uppercase text-white">get update from anywhere</h2>
-						<p class="text-white">
-							Bearing Void gathering light light his eavening unto dont afraid. 
-						</p>
-						<div class="subcribe-form" id="mc_embed_signup">
-							<form target="_blank" novalidate="true" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscription relative">
-								<input name="EMAIL" placeholder="Email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email address'" required="" type="email">
-								<div style="position: absolute; left: -5000px;">
-									<input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
-								</div>
-								<button class="primary-btn hover d-inline">Get Started</button>
-								<div class="info"></div>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--================ End Newsletter Area =================-->
-
-	<!--================Footer Area =================-->
-	<footer class="footer_area">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-12">
-					<div class="footer_top flex-column">
-						<div class="footer_logo">
-							<a href="#">
-								<img src="img/logo.png" alt="">
-							</a>
-							<h4>Follow Me</h4>
-						</div>
-						<div class="footer_social">
-							<a href="#"><i class="fa fa-facebook"></i></a>
-							<a href="#"><i class="fa fa-twitter"></i></a>
-							<a href="#"><i class="fa fa-dribbble"></i></a>
-							<a href="#"><i class="fa fa-behance"></i></a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row footer_bottom justify-content-center">
-				<p class="col-lg-8 col-sm-12 footer-text">
-					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved 
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-			</div>
-		</div>
-	</footer>
-	<!--================End Footer Area =================-->
-
-	<!-- Optional JavaScript -->
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="js/jquery-3.2.1.min.js"></script>
-	<script src="js/popper.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/stellar.js"></script>
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
-	<script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
-	<script src="vendors/isotope/isotope-min.js"></script>
-	<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-	<script src="js/jquery.ajaxchimp.min.js"></script>
-	<script src="js/mail-script.js"></script>
-	<!--gmaps Js-->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
-	<script src="js/gmaps.min.js"></script>
-	<script src="js/theme.js"></script>
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
