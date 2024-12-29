@@ -17,7 +17,7 @@ const emailAddress = document.querySelectorAll(".email-address");
 
 for (let i = 0; i < sendEmail.length; i++) {
   sendEmail[i].addEventListener("click", function () {
-    const part1 = "viktor.mauzer";
+    const part1 = "mahmoud.fariss9394";
     const part2 = Math.pow(2, 6);
     const part3 = String.fromCharCode(part2);
     const part4 = "gmail.com";
